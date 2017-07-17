@@ -37,13 +37,11 @@ void setup(){
 void buzz(boolean left, boolean right){
   if(left){
       analogWrite(OUT_RIGHT, FEEDBACK_INTENSITYS[intensitySetting] );
-      //digitalWrite(OUT_RIGHT, HIGH);
   }else{
       analogWrite(OUT_RIGHT, 0);
   }
   if(right){
       analogWrite(OUT_LEFT, FEEDBACK_INTENSITYS[intensitySetting] );
-      //digitalWrite(OUT_LEFT, HIGH);
   }else{
       analogWrite(OUT_LEFT, 0);
   }
